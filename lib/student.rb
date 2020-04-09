@@ -15,7 +15,7 @@ class Student
       FROM students
     SQL
       
-    DB[:conn].execute
+    DB[:conn].execute(sql).map
       
     end
     # remember each row should be a new instance of the Student class
